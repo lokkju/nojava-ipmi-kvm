@@ -1,6 +1,8 @@
 FROM debian:stretch
 LABEL maintainer="Ingo Meyer <i.meyer@fz-juelich.de>"
 
+COPY apt-sources-list-stretch /etc/apt/sources.list
+
 # Install needed packages and Java dependencies (second `apt-get install` call)
 RUN apt-get update && \
     apt-get install -y --no-install-recommends ca-certificates curl eterm fluxbox net-tools procps python-numpy \
