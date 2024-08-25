@@ -1,0 +1,4 @@
+# jessie has been archived, so you need to update your sources.list to use the archive.debian.org repository.
+# the signing key for the archive repository has expired, so you need to pass the trusted flag to apt.
+deb [trusted=yes] http://archive.debian.org/debian/ stretch main
+deb [trusted=yes] http://archive.debian.org/debian-security/ stretch/updates main
